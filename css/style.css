@@ -1,0 +1,122 @@
+.main-menu1 {
+    font-size: 32px;
+    position: absolute;
+    background-color: rgb(49, 93, 151);
+    left: 280px;
+    width: 238px;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.main-menu2 {
+    font-size: 32px;
+    position: absolute;
+    background-color: rgb(49, 93, 151);
+    left: 560px;
+    width: 238px;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.main-menu3 {
+    font-size: 32px;
+    position: absolute;
+    background-color: rgb(49, 93, 151);
+    left: 840px;
+    width: 238px;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    border: 3px solid black;
+}
+
+.sub1-menu {
+    position: absolute;
+    font-size: 24px;
+    background-color: rgba(9, 126, 221, 0.9);
+    line-height: 64px;
+    width: 150px;
+    text-align: center;
+    left: 320px;
+    top: 50px;
+    border: 2px solid black;
+}
+
+.sub2-menu {
+    position: absolute;
+    font-size: 24px;
+    background-color: rgba(9, 126, 221, 0.9);
+    line-height: 64px;
+    width: 150px;
+    text-align: center;
+    left: 600px;
+    top: 50px;
+    border: 2px solid black;
+}
+
+.sub3-menu {
+    position: absolute;
+    font-size: 24px;
+    background-color: rgba(9, 126, 221, 0.9);
+    line-height: 64px;
+    width: 150px;
+    text-align: center;
+    left: 880px;
+    top: 50px;
+    border: 2px solid black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: rgb(238, 241, 241);
+}
+
+a:focus {
+    outline: none;
+    color: rgb(0, 195, 255);
+}
+
+.main-menu1:hover {
+    background-color: rgb(0, 140, 255);
+    color: rgb(238, 241, 241);
+    border-color: rgb(75, 74, 74);
+    cursor: default;
+}
+
+.main-menu2:hover {
+    background-color: rgb(0, 140, 255);
+    color: rgb(238, 241, 241);
+    border-color: rgb(75, 74, 74);
+    cursor: default;
+}
+
+.main-menu3:hover {
+    background-color: rgb(0, 140, 255);
+    color: rgb(238, 241, 241);
+    border-color: rgb(75, 74, 74);
+    cursor: default;
+}
+
+.sub1-menu:hover {
+    background-color: rgba(49, 146, 224, 0.9);
+}
+
+.sub2-menu:hover {
+    background-color: rgba(49, 146, 224, 0.9);
+}
+
+.sub3-menu:hover {
+    background-color: rgba(49, 146, 224, 0.9);
+}
+
+body {
+    background-color: rgb(238, 241, 241);
+}

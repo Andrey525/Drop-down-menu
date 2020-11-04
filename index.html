@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css"></link>
+    <title>Лабораторная 3.1</title>
+</head>
+
+<body>
+    <script language="JavaScript">
+        let timer = [];
+        var delay = 500;
+
+        function restart(i) {
+            if (i == 1) {
+                timer[i] = setTimeout(displayNone1, delay);
+            } else if (i == 2) {
+                timer[i] = setTimeout(displayNone2, delay);
+            } else if (i == 3) {
+                timer[i] = setTimeout(displayNone3, delay);
+            }
+
+        }
+
+        function timeroff(i) {
+            clearTimeout(timer[i]);
+            document.getElementById("sub" + i).style.display = "block";
+        }
+
+        function displayNone1() {
+            document.getElementById("sub" + 1).style.display = "none";
+        }
+
+        function displayNone2() {
+            document.getElementById("sub" + 2).style.display = "none";
+        }
+
+        function displayNone3() {
+            document.getElementById("sub" + 3).style.display = "none";
+        }
+    </script>
+    <span class="main-menu1" onMouseOver="timeroff(1)" onMouseOut="restart(1)" style="display: block;">Menu1</span>
+    <span class="main-menu2" onMouseOver="timeroff(2)" onMouseOut="restart(2)" style="display: block;">Menu2</span>
+    <span class="main-menu3" onMouseOver="timeroff(3)" onMouseOut="restart(3)" style="display: block;">Menu3</span>
+    <span id="sub1" class="sub1-menu" onMouseOver="timeroff(1)" onMouseOut="restart(1)" style="display: none;"> <a href="#" >Sub-Menu1</a><br><a href="#">Sub-Menu2</a><br><a href="#">Sub-Menu3</a><br></span>
+    <span id="sub2" class="sub2-menu" onMouseOver="timeroff(2)" onMouseOut="restart(2)" style="display: none;"><a href="#" >Sub-Menu1</a><br><a href="#">Sub-Menu2</a><br><a href="#">Sub-Menu3</a><br></span>
+    <span id="sub3" class="sub3-menu" onMouseOver="timeroff(3)" onMouseOut="restart(3)" style="display: none;"><a href="#" >Sub-Menu1</a><br><a href="#">Sub-Menu2</a><br><a href="#">Sub-Menu3</a><br></span>
+</body>
+
+</html>
